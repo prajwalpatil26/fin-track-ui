@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-finance-primary: #1e1b4b;
+  --color-finance-secondary: #312e81;
+  --color-finance-accent: #6366f1;
+  --color-finance-success: #14b8a6;
+  --color-finance-danger: #f43f5e;
+  --color-finance-warning: #f59e0b;
+  --color-background: #f8fafc;
+  --color-card: rgba(255, 255, 255, 0.9);
+  --color-text-main: #0f172a;
+  --color-text-muted: #475569;
+  --color-border: rgba(226, 232, 240, 0.8);
+}
+
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      --color-finance-primary: #f8fafc;
+      --color-finance-secondary: #cbd5e1;
+      --color-finance-accent: #818cf8;
+      --color-background: #0f172a;
+      --color-card: #1e293b;
+      --color-text-main: #f8fafc;
+      --color-text-muted: #94a3b8;
+      --color-border: #334155;
+      --color-finance-success: #2dd4bf;
+      --color-finance-danger: #fb7185;
+    }
+  }
+  .dark & {
+    --color-finance-primary: #f8fafc;
+    --color-finance-secondary: #cbd5e1;
+    --color-finance-accent: #818cf8;
+    --color-background: #0f172a;
+    --color-card: #1e293b;
+    --color-text-main: #f8fafc;
+    --color-text-muted: #94a3b8;
+    --color-border: #334155;
+    --color-finance-success: #2dd4bf;
+    --color-finance-danger: #fb7185;
+  }
+}
+
+body {
+  background: var(--color-background);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.dark body {
+  background: var(--color-background);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-card/95 backdrop-blur-md border border-border shadow-md dark:shadow-none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
