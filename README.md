@@ -63,8 +63,4 @@ npm run dev
 ### 4. Open in Browser
 Once the server launches, explicitly copy the `Local` url generated in the terminal (usually `http://localhost:5173`) and paste it into your browser. 
 
-*Tip: For evaluating the extensive frontend responsiveness, freely squeeze the browser window from desktop width exclusively down to mobile dimensions, or test directly on your mobile device utilizing the `Network` endpoint.*
 
----
-
-*Designed and engineered exclusively for the Hackathon evaluation.*
