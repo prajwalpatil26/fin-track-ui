@@ -1,4 +1,4 @@
-# FinTrack 🚀
+# FinTrack 
 
 > **A Premium UI/UX Finance Dashboard engineered for Bharat.**  
 > **Designed and Developed by Prajwal Patil.**
@@ -7,7 +7,7 @@ FinTrack is an exclusively designed, mobile-responsive, aesthetic-driven web app
 
 ---
 
-## 🎯 Overview of Approach & UX Philosophy
+##  Overview of Approach & UX Philosophy
 
 The architecture was intentionally crafted without relying on pre-built templates or rigid UI libraries like Material-UI. Every component is custom-engineered to ensure absolute control over the user experience (UX) and the interface (UI):
 
@@ -18,7 +18,7 @@ The architecture was intentionally crafted without relying on pre-built template
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend Core**: React 19 + TypeScript + Vite 
 - **State Management**: Zustand
@@ -28,7 +28,7 @@ The architecture was intentionally crafted without relying on pre-built template
 
 ---
 
-## ✨ Explanations of Features
+##  Explanations of Features
 
 - **Wealth Trajectory Subsystem (Area Chart)**: A historically accurate Recharts integration. The data algorithm pulls absolute cumulative arrays, maps them across a dynamic 30-day chronological bucket, strictly computes net daily flows, and iteratively aligns the final end-point to mirror the exact total dashboard balance down to the Rupee.
 - **Dynamic Advanced Filtering**: Built a native local search & filtering engine on the Transaction table capable of stacking queries. You can stack a Time Range (`Last 7 Days`), a single auto-detected dynamic Category (`Groceries (Zepto/Blinkit)`), and standard string Search operations natively without relying on an external server.
@@ -37,7 +37,7 @@ The architecture was intentionally crafted without relying on pre-built template
 
 ---
 
-## 🚀 Setup Instructions (Manual Review)
+##  Setup Instructions (Manual Review)
 
 Follow these steps to run the application on your local machine manually:
 
